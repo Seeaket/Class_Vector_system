@@ -53,7 +53,7 @@ void Assist::LocalTime()
 	//std::cout << std::setfill('0');
 	std::cout << std::endl << Blank(4) << "本地时间:" << t1.tm_year + 1900 << "年" << t1.tm_mon + 1 << "月" << t1.tm_mday
 		<< "日_星期" << wday[t1.tm_wday];
-	std::cout << "\t" << t1.tm_hour << ":" << t1.tm_min << ":" << t1.tm_sec << std::endl;
+	std::cout << "\t" << t1.tm_hour << ":" << t1.tm_min << ":" << t1.tm_sec;
 }
 
 

@@ -39,6 +39,7 @@ void Function::Menu(Users ranks)
 	{
 		system("cls");
 		Assist::LocalTime();
+		std::cout << "   用户等级:" << ranks.rank << "级" << std::endl;
 		std::cout << Assist::Blank(5) << "  ——————————————" << std::endl;
 		std::cout << Assist::Blank(5) << "   ClassVector-ModeManagement" << std::endl;
 		std::cout << Assist::Blank(6) << "   1、添加信息" << std::endl;
@@ -253,18 +254,18 @@ int Function::Main(Users rank)
     return 0;
 }
 
-bool Search::NameSearch(Message s, std::string xx1)
+/*bool Search::NameSearch(Message s, std::string xx1)
 {
 	return s.name == xx1;
-}
+}*/
 
-bool Search::IdSearch(Message s, std::string xx1)
+/*bool Search::IdSearch(Message s, std::string xx1)
 {
 	std::string numb = std::to_string(s.numb);
 	return numb == xx1;
-}
+}*/
 
-bool Search::WageSearch(Message s, std::string xx1)
+/*bool Search::WageSearch(Message s, std::string xx1)
 {
 	double EPS = 1e-6;
 	std::stringstream ss(xx1);
@@ -281,9 +282,9 @@ bool Search::WageSearch(Message s, std::string xx1)
 		x2 = x3;
 	}
 	return s.wage > x1 + EPS && s.wage < x2 + EPS;
-}
+}*/
 
-bool Search::SimilaritySearch(Message s, std::string xx1)
+/*bool Search::SimilaritySearch(Message s, std::string xx1)
 {
 	
 	char id[20], wage[20];
@@ -291,7 +292,7 @@ bool Search::SimilaritySearch(Message s, std::string xx1)
 	sprintf(id, "%d", s.numb);
 	sprintf(wage, "%f", s.wage);
 	return strstr(id, xx2) || strstr(wage, xx2) || strstr(s.name, xx2);
-}
+}*/
 
 void Search::FindFunction()
 {
@@ -345,7 +346,7 @@ void Search::FindFunction()
 	}
 }
 
-bool Sorts::NameSort(std::vector<Message>vec, int j, int i)
+/*bool Sorts::NameSort(std::vector<Message>vec, int j, int i)
 {
 	return strcmp(vec.at(j).name, vec.at(i).name) > 0;
 }
@@ -359,7 +360,7 @@ bool Sorts::WageSort(std::vector<Message>vec, int j, int i)
 {
 	double EPS = 1e-6;
 	return vec.at(j).wage > (vec.at(i).wage + EPS);
-}
+}*/
 
 
 void Sorts::SortFunction()

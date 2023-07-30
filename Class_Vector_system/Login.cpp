@@ -224,7 +224,7 @@ bool Login::Enroll()
 			vect.push_back(messageUser);
 			SaveUser();
 			Assist::Delay(800);
-			std::cout << std::endl <<Assist::Blank(5) << "注册成功!请返回登入" << std::endl;
+			std::cout << std::endl <<Assist::Blank(6) << "注册成功!请返回登入" << std::endl;
 			std::cout << Assist::Blank(6) << "    ";
 			system("pause");
 			return true;
